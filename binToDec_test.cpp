@@ -20,13 +20,25 @@ int main()
 {
     int weight = 0;
     int decimal = 0;
-    int binary = 1101;
+    int bit_4 = 1101;
+    int bit_8 = 1000001;
 
-    cout << "binary: " << binary << endl;
+    cout << "4-bit binary: " << bit_4 << endl;
 
-    binToDec(binary, decimal, weight);
+    binToDec(bit_4, decimal, weight);
 
     cout << "decimal: " << decimal << endl;
+
+    //reset
+    weight = 0;
+    decimal = 0;
+
+    cout << "8-bit binary: " << bit_8 << endl;
+
+    binToDec(bit_8, decimal, weight);
+
+    cout << "decimal: " << decimal << endl;
+
 
     return 0;
 }
