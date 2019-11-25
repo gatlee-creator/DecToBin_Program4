@@ -14,9 +14,34 @@ void decToBin(int number, int base);
 
 int main()
 {
-
+    // int testNum = 13;
+    // const int base = 2;
 
 
 
     return 0;
+}
+
+
+void decToBin(int number, int base){
+
+    int quotient, bit;
+    linkedStackType<int> quotientHolder; 
+
+    //load in the quotients
+    while (quotient > 0)
+    {
+        quotient = number / base;
+        quotientHolder.push(quotient);
+    }
+    
+    //now get the right most bits 
+    while (quotientHolder.isEmptyStack())
+    {
+        bit = quotientHolder.top() % base; 
+        quotientHolder.pop();
+
+        cout << bit; //output the right most bit 
+    }
+    
 }
