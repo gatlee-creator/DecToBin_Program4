@@ -6,6 +6,10 @@
     This uses a linked-based stack to convert a decimal number into an
     equivalent binary number. The linked based stack library is used 
     from lab13. 
+
+    Note:
+    Not sure why I'm getting a 0 in front of each binary sequence as I'm
+    not using unsigned ints.
 */
 
 #include <iostream>
@@ -42,6 +46,14 @@ int main()
 
     //test 3
     testNum = 260; //new test number
+    cout << "decimal: " << testNum << endl;
+
+    cout << "binary: ";
+    decToBin(testNum);
+    cout << endl;
+
+    //test 4 - try large number 
+    testNum = 2114225478;
     cout << "decimal: " << testNum << endl;
 
     cout << "binary: ";
