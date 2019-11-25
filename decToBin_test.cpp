@@ -8,8 +8,8 @@
     from lab13. 
 
     Note:
-    Not sure why I'm getting a 0 in front of each binary sequence as I'm
-    not using unsigned ints.
+    Not sure why I'm getting a 0 in front of each binary sequence but 
+    the rest of the sequence is all correct. 
 */
 
 #include <iostream>

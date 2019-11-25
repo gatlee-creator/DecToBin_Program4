@@ -10,7 +10,8 @@
     Note: 
     Representing a 32 bit binary sequence in code leads to integer overflow. 
     The compiler thinks we are trying to put a number in the trillions into 
-    an integer data type. Don't know a work around at this time.
+    an integer data type. I don't know a work around at this time - code is 
+    commented out.
 */
 #include <iostream>
 #include <string>
@@ -152,4 +153,4 @@ void binToDec(long long int binaryNumber, long long int &decimal, int &weight){
         //cout << "decimal: " << decimal << endl; //debug 
     }
     
-}
+}// end of binToDec
