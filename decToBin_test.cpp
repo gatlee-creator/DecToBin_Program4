@@ -21,7 +21,7 @@ int main()
     
     cout << "binary: ";
     decToBin(testNum, base);
-
+    cout << endl;
 
     return 0;
 }
