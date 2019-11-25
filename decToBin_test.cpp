@@ -17,8 +17,25 @@ int main()
     int testNum = 13;
     const int base = 2;
 
+    //test 1 
     cout << "decimal: " << testNum << endl;
     
+    cout << "binary: ";
+    decToBin(testNum, base);
+    cout << endl;
+
+    //test 2
+    testNum = 78; //new test number
+    cout << "decimal: " << testNum << endl;
+
+    cout << "binary: ";
+    decToBin(testNum, base);
+    cout << endl;
+
+    //test 3
+    testNum = 260; //new test number
+    cout << "decimal: " << testNum << endl;
+
     cout << "binary: ";
     decToBin(testNum, base);
     cout << endl;
