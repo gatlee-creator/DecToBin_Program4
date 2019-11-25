@@ -43,7 +43,7 @@ void decToBin(int number, int base){
     }
     
     //now get the right most bits 
-    while (quotientHolder.isEmptyStack())
+    while (!quotientHolder.isEmptyStack())
     {
         bit = quotientHolder.top() % base; 
         cout << bit; //output the right most bit 
