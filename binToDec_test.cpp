@@ -13,6 +13,7 @@ void binToDec(int binaryNumber, int &decimal, int &weight);
     Precondtions:
         - decimal is set to 0
         - weight is set to 0  
+        - binaryNumber is in binary format (ex. 11001)
 */
 
 void binToDec(long long int binaryNumber, long long int &decimal, int &weight);
@@ -22,7 +23,7 @@ void binToDec(long long int binaryNumber, long long int &decimal, int &weight);
     Precondition:
         - decimal is set to 0
         - weight is set to 0
-
+        - binaryNumber is in binary format (ex. 11001)
 */
 
 
@@ -75,6 +76,13 @@ int main()
     return 0;
 }
 
+/*
+    Function takes in a 4 to 8 bit binary number and fills 
+    decimal with a base 10 number. 
+    Postcondtion:
+        input: 1101
+        output: 13
+*/
 void binToDec(int binaryNumber, int &decimal, int &weight){
     int bit;
     //get the length of the binaryNumber
@@ -100,6 +108,13 @@ void binToDec(int binaryNumber, int &decimal, int &weight){
     
 }
 
+/*
+    Function takes in a 16 bit binary number and fills 
+    decimal with a base 10 number. 
+    Postcondtion:
+        input: 111100111100000
+        output: 31,200
+*/
 void binToDec(long long int binaryNumber, long long int &decimal, int &weight){
     int bit;
     //get the length of the binaryNumber
