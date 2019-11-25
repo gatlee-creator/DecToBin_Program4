@@ -41,7 +41,13 @@ int main()
     return 0;
 }
 
-
+/*
+    Function takes a base 10 decimal and converts to base 2
+    binary. 
+    Postcondition:
+        input: 13
+        output: 01101
+*/
 void decToBin(int number){
 
     int quotient, bit;
