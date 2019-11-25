@@ -1,3 +1,13 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 11/25/19
+
+    This uses a linked-based stack to convert a decimal number into an
+    equivalent binary number. The linked based stack library is used 
+    from lab13. 
+*/
+
 #include <iostream>
 #include "linkedStack.h" //linked list stack code from lab 13
 
@@ -37,6 +47,7 @@ int main()
     cout << "binary: ";
     decToBin(testNum);
     cout << endl;
+
 
     return 0;
 }

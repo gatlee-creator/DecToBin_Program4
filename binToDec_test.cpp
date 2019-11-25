@@ -1,3 +1,17 @@
+/*
+    Name: Graham Atlee
+    Course: csc1720
+    Date: 11/25/19
+
+    This uses an array-based stack to convert a binary number into an
+    equivalent decimal number. The array based stack library is used 
+    from lab13. 
+
+    Note: 
+    Representing a 32 bit binary sequence in code leads to integer overflow. 
+    The compiler thinks we are trying to put a number in the trillions into 
+    an integer data type. Don't know a work around at this time.
+*/
 #include <iostream>
 #include <string>
 #include <cmath>
