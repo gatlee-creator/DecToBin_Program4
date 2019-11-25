@@ -3,25 +3,23 @@
 
 using namespace std;
 
-void decToBin(int number, int base);
+void decToBin(int number);
 /*
     This function takes a positive integer and converts
     it to its binary form in base 2. 
     Precondtions:
-        number = > 0
-        base == 2 
+        number > 0
 */
 
 int main()
 {
     int testNum = 13;
-    const int base = 2;
-
+    
     //test 1 
     cout << "decimal: " << testNum << endl;
     
     cout << "binary: ";
-    decToBin(testNum, base);
+    decToBin(testNum);
     cout << endl;
 
     //test 2
@@ -29,7 +27,7 @@ int main()
     cout << "decimal: " << testNum << endl;
 
     cout << "binary: ";
-    decToBin(testNum, base);
+    decToBin(testNum);
     cout << endl;
 
     //test 3
@@ -37,16 +35,17 @@ int main()
     cout << "decimal: " << testNum << endl;
 
     cout << "binary: ";
-    decToBin(testNum, base);
+    decToBin(testNum);
     cout << endl;
 
     return 0;
 }
 
 
-void decToBin(int number, int base){
+void decToBin(int number){
 
     int quotient, bit;
+    const int base = 2;
     linkedStackType<int> quotientHolder; 
     
     quotientHolder.push(number);
