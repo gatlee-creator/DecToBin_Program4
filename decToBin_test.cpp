@@ -14,9 +14,13 @@ void decToBin(int number, int base);
 
 int main()
 {
-    // int testNum = 13;
-    // const int base = 2;
+    int testNum = 13;
+    const int base = 2;
 
+    cout << "decimal: " << testNum << endl;
+    
+    cout << "binary: ";
+    decToBin(testNum, base);
 
 
     return 0;
@@ -27,11 +31,14 @@ void decToBin(int number, int base){
 
     int quotient, bit;
     linkedStackType<int> quotientHolder; 
+    
+    quotientHolder.push(number);
+    quotient = number; 
 
     //load in the quotients
     while (quotient > 0)
     {
-        quotient = number / base;
+        quotient = quotient / base;
         quotientHolder.push(quotient);
     }
     
@@ -39,9 +46,9 @@ void decToBin(int number, int base){
     while (quotientHolder.isEmptyStack())
     {
         bit = quotientHolder.top() % base; 
-        quotientHolder.pop();
-
         cout << bit; //output the right most bit 
+
+        quotientHolder.pop();
     }
     
-}
+} //end of decToBin 
